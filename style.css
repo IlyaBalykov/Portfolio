@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    color: rgb(30, 16, 16);
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+/*Navigation*/
+nav {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    z-index: 2;
+    background: rgba(30, 16, 16, 0.7);
+}
+ul {
+    width: 100%;
+    height: inherit;
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content;
+    justify-content: right;
+    align-items: center;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+li {
+    height: inherit;
+    padding: 0 10px 0 10px;
+    text-align: center;
+    color: rgb(204, 209, 212);
+    font-family: 'Roboto', sans-serif;
+}
+li:hover {
+    background-color: rgb(204, 209, 212);
+    color: rgb(30, 16, 16);
+}
+li > a {
+    line-height: 50px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: inherit;
+}
+a:visited {
+    text-decoration: none;
+}
+/*Home*/
+#home {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: url("image/bg.jpg") no-repeat;
+    background-size: 100vw;
+}
+h1{
+    width: max-content;
+    color: rgb(204, 209, 212);
+    font-family: 'Zen Dots', cursive;
+    font-size: 30pt;
+    letter-spacing: 5px;
+    position: absolute;
+    transform: translate(25vh, 30vw);
+}
+/*About*/
+#about {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgb(203, 209, 210), rgb(243, 245, 248));
+    }
+#about-image {
+    width: 60%;
+    position: relative;
+}
+#about-text {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    text-align: left;
+}
+#about-text >h2 {
+    text-indent: 25px;
+}
+#about-text > p {
+    text-indent: 25px;
+    color: rgb(30, 16, 16);
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    line-height: 2em;
+    margin-top: 3%;
+    margin-right: 10%;
+}
+#photo-me {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    z-index: 1;
+    top: 30%;
+    left: 35%;
+}
+#photo-keyboard {
+    position: absolute;
+    width: 60%;
+    height: auto;
+    z-index: 0;
+    left: 15%;
+    top: 15%;
+}
+/*Portfolio*/
+#portfolio {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 100%;
+    background: linear-gradient(rgb(243, 245, 248), #fff);
+}
+#portfolio > h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 3%;
+    }
+#portfolio-image {
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    grid-auto-rows: auto;
+    grid-gap: 1%;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-image {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio-image > img {
+    width: 100%;
+    height: auto;
+}
+.portfolio-image > p {
+    position: absolute;
+    bottom: 0;
+    color: rgb(30, 16, 16);
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+}
+/*Contacts*/
+#contacts {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 30vh;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    }
+#contacts > h2 {
+    text-transform: uppercase;
+    margin-bottom: 1%;
+}
+#contacts > p {
+    margin-bottom: 1%;
+    color: rgb(30, 16, 16);
+    font-family: 'Roboto', sans-serif;
+}
+.social{
+    opacity: 0.5;
+}
+/*Footer*/
+footer {
+    position: relative;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #1f0900;
+    font-family: 'Karantina', cursive;
+    font-size: 25px;
+    color: gainsboro;
+    letter-spacing: 3px;
+}

@@ -3,17 +3,88 @@
     <head>
         <meta charset="utf-8">
         <title>Hello, World!</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>Ilya Balykov, Front-end developer</h1>
-        <h2>About me</h2>
-        <img src="Image/Ilya_Balykov.jpg" alt="Ilya_Balykov">
-        <p>
-            Hi, my name is Ilya. I am a junior front-end developer. Programming for me is not only a job, but also a hobby. <br>
-            I like to gain new knowledge, learn technologies and apply them in practice.
-        </p>
-        <h2>Portfolio</h2>
-        <img src="Image/flashcards.jpg" alt="flashcards">
-        <p>Flashcards</p>
+        <nav>
+            <ul>
+                <li id="menu-item1">
+                    <a href="#about">About me</a>
+                </li>
+                <li id="menu-item2">
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li id="menu-item3">
+                    <a href="#contacts">Contacts</a>
+                </li>
+                <li id="menu-item4">
+                    <a href="#home">Home</a>
+                </li>
+            </ul>
+        </nav>
+        <header id="home">
+            <h1>Ilya Balykov,
+                <br>
+            Front-end developer
+            </h1>
+        </header>
+        <section id="about">
+            <div class="about-item" id="about-image">
+                <img id="photo-me" src="image/Me.jpg" alt="Ilya_Balykov" title="Ilya Balykov">
+                <img id="photo-keyboard" src="image/kb.jpg" alt="keyboard">
+            </div>
+            <div class="about-item" id="about-text">
+            <h2>About me</h2>
+                <p class="about-text">
+                    Hi, my name is Ilya. I am a junior front-end developer. Programming for me is not only a job, but also a hobby.
+                </p>
+                <p class="about-text">
+                    I like to gain new knowledge, learn technologies and apply them in practice.
+                </p>
+                <p class="about-text">
+                    <strong>Skills: </strong>HTML, CSS
+                </p>
+            </div>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div id="portfolio-image">
+                <div class="portfolio-image">
+                    <img id="photo-flashcards" src="image/flashcards.jpg" alt="flashcards" title="Flashcards">
+                    <p>Flashcards</p>
+                </div>
+                <div class="portfolio-image">
+                    <img id="photo-piano" src="image/piano.png" alt="piano" title="Virtual Piano">
+                    <p>Virtual Piano</p>
+                </div>
+            </div>
+        </section>
+        <section id="contacts">
+            <h2>Contacts</h2>
+            <p>
+                You can contact me at <a href="mailto:balykov.ilya.88@gmail.com">balykov.ilya.88@gmail.com</a>
+                <br>
+                or phone number: +79177147738
+            </p>
+            <div>
+                <a href="https://github.com/IlyaBalykov/" target="_blank"><img src="image/github.svg" alt="GitHub" title="GitHub" width="25px" class="social"></a>
+                <a href="https://www.facebook.com/ert.rus/" target="_blank"><img src="image/facebook.svg" alt="Facebook" title="Facebook" width="25px" class="social"></a>
+                <a href="https://www.instagram.com/balykov20/" target="_blank"><img src="image/instagram.svg" alt="Instagram" title="Instagram" width="25px" class="social"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="image/twitter.svg" alt="Twitter" title="Twitter" width="25px" class="social"></a>
+                <a href="https://vk.com/id400577990" target="_blank"><img src="image/vkontakte.svg" alt="Vkontakte" title="Vkontakte" width="25px" class="social"></a>
+            </div>
+        </section>
+        <footer>
+            <p id="footer-text">
+                Ilya Balykov
+                <br>
+                2021
+            </p>
+
+        </footer>
     </body>
 </html>

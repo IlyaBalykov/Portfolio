@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>Hello, World!</title>
-        <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@300&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karantina:wght@300&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
     </head>
     <body>
         <nav>
@@ -29,7 +29,7 @@
         <header id="home">
             <h1>Ilya Balykov,
                 <br>
-            Front-end developer
+                Front-end developer
             </h1>
         </header>
         <section id="about">
@@ -55,11 +55,15 @@
             <div id="portfolio-image">
                 <div class="portfolio-image">
                     <img id="photo-flashcards" src="image/flashcards.jpg" alt="flashcards" title="Flashcards">
-                    <p>Flashcards</p>
+                    <form>
+                        <button class="open-window" type="button" onclick="flashcards()">Flashcards</button>
+                    </form>
                 </div>
                 <div class="portfolio-image">
                     <img id="photo-piano" src="image/piano.png" alt="piano" title="Virtual Piano">
-                    <p>Virtual Piano</p>
+                    <form>
+                        <button class="open-window" type="button" onclick="virtual_piano()">Virtual Piano</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -68,7 +72,7 @@
             <p>
                 You can contact me at <a href="mailto:balykov.ilya.88@gmail.com">balykov.ilya.88@gmail.com</a>
                 <br>
-                or phone number: +79177147738
+                or phone number: <a href="tel:+79177147738">+79177147738</a>
             </p>
             <div>
                 <a href="https://github.com/IlyaBalykov/" target="_blank"><img src="image/github.svg" alt="GitHub" title="GitHub" width="25px" class="social"></a>
@@ -84,7 +88,25 @@
                 <br>
                 2021
             </p>
-
         </footer>
+        <div class="window window-flashcards">
+            <h1>Flashcards</h1>
+            <p>You can see the project at the following link: <a href="https://github.com/IlyaBalykov/Flashcards" >flashcards</a>.</p>
+            <p>I did this project when I was studying the frontend on HyperSkill. I created a web page with flip-down flash cards,
+            learned some HTML basics and learned that CSS can easily make a beautiful design</p>
+            <form>
+                <button type="button" onclick="flashcards_close()">Close</button>
+            </form>
+        </div>
+        <div class="window window-virtual-piano">
+            <h1>Virtual Piano</h1>
+            <p>You can see the project at the following link: <a href="https://github.com/IlyaBalykov/Virtual_piano" >Virtual Piano</a>.</p>
+            <p>I did this project when I was studying the frontend on HyperSkill. I created a web page with flip-down flash cards,
+                learned some HTML basics and learned that CSS can easily make a beautiful design</p>
+            <form>
+                <button type="button" onclick="virtual_piano_close()">Close</button>
+            </form>
+        </div>
+    <script src="main.js"></script>
     </body>
 </html>

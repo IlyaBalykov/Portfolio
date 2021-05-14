@@ -9,9 +9,9 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
     </head>
-    <body>
+    <body id="body">
         <nav>
-            <ul>
+            <ul id="main-menu">
                 <li id="menu-item1">
                     <a href="#about">About me</a>
                 </li>
@@ -23,6 +23,21 @@
                 </li>
                 <li id="menu-item4">
                     <a href="#home">Home</a>
+                </li>
+            </ul>
+            <div id="icon">
+                <img id="hamburger-icon" class="hamburger-icon" src="image/hamburger.png" alt="Menu" onclick="hamburger()" >
+                <img id="cross-icon" class="cross-icon" src="image/cross.png" alt="Close" onclick="hamburger_close()">
+            </div>
+            <ul id="hamburger" class="hamburger">
+                <li>
+                    <a href="#about">About me</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contacts">Contacts</a>
                 </li>
             </ul>
         </nav>

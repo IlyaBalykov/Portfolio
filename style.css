@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+a:visited {
+    text-decoration: none;
+}
 h2 {
     color: rgb(30, 16, 16);
     font-family: 'Roboto', sans-serif;
@@ -21,7 +24,8 @@ nav {
     z-index: 2;
     background: rgba(30, 16, 16, 0.7);
 }
-ul {
+/*Main menu*/
+#main-menu {
     width: 100%;
     height: inherit;
     display: grid;
@@ -48,8 +52,76 @@ li > a {
     letter-spacing: 2px;
     color: inherit;
 }
-a:visited {
-    text-decoration: none;
+/*Hamburger-menu*/
+#icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-style: preserve-3d;
+    transition: all 0.5s linear;
+    height: 50px;
+    width: 50px;
+}
+.icon-click {
+    transform: rotateX(180deg);
+}
+#hamburger-icon {
+    height: 50px;
+    background-color: rgb(204, 209, 212);
+    position: absolute;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    z-index: 3;
+    backface-visibility: hidden;
+}
+#cross-icon {
+    height: 50px;
+    background-color: gainsboro;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    transform: rotateX(180deg);
+    visibility: hidden;
+}
+.close-cross-icon {
+    visibility: collapse;
+}
+.hamburger {
+    width: max-content;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    list-style-type: none;
+    visibility: hidden;
+}
+.open-hamburger-menu {
+    width: max-content;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    list-style-type: none;
+    visibility: visible;
+    animation: hamburger 1s 1;
+}
+@media (max-width: 800px) {
+    #main-menu {
+        display: none;
+        visibility: collapse;
+    }
+    #hamburger-icon, #cross-icon {
+        visibility: visible;
+    }
+}
+@keyframes hamburger  {
+    0% {
+        visibility: visible;
+        right: -10%;
+    }
+    100% {
+        right: 0;
+    }
 }
 /*Home*/
 #home {
